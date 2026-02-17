@@ -17,7 +17,7 @@ repositories {
     maven { url 'https://jitpack.io' }
 }
 dependencies {
-    implementation 'com.github.Elizabet1926:solana-web3:solanaweb:1.0.0'
+    implementation 'com.github.Elizabet1926:solana-web3:1.0.1'
 }
 ```
 
