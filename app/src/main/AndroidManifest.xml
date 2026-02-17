@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".SolanaApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Solana">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Solana">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".config.RPCConfigActivity" android:exported="false" />
+        <activity android:name=".wallet.CreateWalletActivity" android:exported="false" />
+        <activity android:name=".wallet.ImportMnemonicActivity" android:exported="false" />
+        <activity android:name=".wallet.ImportPrivateKeyActivity" android:exported="false" />
+        <activity android:name=".balance.SOLBalanceActivity" android:exported="false" />
+        <activity android:name=".balance.TokenListActivity" android:exported="false" />
+        <activity android:name=".balance.TokenBalanceActivity" android:exported="false" />
+        <activity android:name=".transfer.SendSOLActivity" android:exported="false" />
+        <activity android:name=".transfer.SendSPLTokenActivity" android:exported="false" />
+        <activity android:name=".multisig.MultisigCreateActivity" android:exported="false" />
+        <activity android:name=".multisig.MultisigSendSOLActivity" android:exported="false" />
+        <activity android:name=".multisig.MultisigSendSPLTokenActivity" android:exported="false" />
+        <activity android:name=".multisig.MultisigActivateActivity" android:exported="false" />
+        <activity android:name=".multisig.MultisigApproveActivity" android:exported="false" />
+        <activity android:name=".multisig.MultisigExecuteActivity" android:exported="false" />
+        <activity android:name=".multisig.MultisigProposalStatusActivity" android:exported="false" />
+        <activity android:name=".multisig.MultisigGuideActivity" android:exported="false" />
+        <activity android:name=".signature.SignMessageActivity" android:exported="false" />
+        <activity android:name=".signature.VerifySignatureActivity" android:exported="false" />
+    </application>
+
+</manifest>
